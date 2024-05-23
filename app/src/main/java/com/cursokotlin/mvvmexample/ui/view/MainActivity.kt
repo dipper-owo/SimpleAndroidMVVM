@@ -21,9 +21,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         quoteViewModel.onCreate()
-
         quoteViewModel.quoteModel.observe(this, Observer {
             binding.tvQuote.text = it.quote
             binding.tvAuthor.text = it.author
@@ -31,9 +29,6 @@ class MainActivity : AppCompatActivity() {
         quoteViewModel.isLoading.observe(this, Observer {
             binding.loading.isVisible = it
         })
-
         binding.viewContainer.setOnClickListener { quoteViewModel.randomQuote() }
-
     }
-
 }

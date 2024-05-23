@@ -1,6 +1,6 @@
-package com.cursokotlin.mvvmexample.data.network
+package com.cursokotlin.mvvmexample.data.remote
 
-import com.cursokotlin.mvvmexample.data.model.QuoteModel
+import com.cursokotlin.mvvmexample.data.remote.model.QuoteModel
 import retrofit2.Response
 import retrofit2.http.GET
 

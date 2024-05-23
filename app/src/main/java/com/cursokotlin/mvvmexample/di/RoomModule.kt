@@ -2,7 +2,7 @@ package com.cursokotlin.mvvmexample.di
 
 import android.content.Context
 import androidx.room.Room
-import com.cursokotlin.mvvmexample.data.database.QuoteDatabase
+import com.cursokotlin.mvvmexample.data.local.QuoteDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
